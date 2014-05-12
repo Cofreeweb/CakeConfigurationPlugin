@@ -17,12 +17,9 @@ class ConfigurationSchema extends CakeSchema {
 		'enable_comments' => array('type' => 'boolean', 'null' => true, 'default' => 1, 'comment' => 'Permitir comentarios en todos los contenidos que los tengan'),
 		'comments_moderate' => array('type' => 'boolean', 'null' => true, 'default' => 1, 'comment' => 'Comentarios moderados'),
 		'allow_public_comments' => array('type' => 'boolean', 'null' => true, 'default' => 1, 'comment' => 'Permitir comentarios públicos'),
-		
 		'page_format_titles' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => 'El formato de los títulos de las páginas', 'charset' => 'utf8'),
 		'content_format_titles' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => 'El formato de los títulos de las páginas dinámicas', 'charset' => 'utf8'),
-		
 		'theme' => array('type' => 'string', 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => 'El theme', 'charset' => 'utf8'),
-		
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1),
